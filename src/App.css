@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+#calculator {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+#main_calc_div {
+  margin: 0 auto;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #000;
+  position: relative;
+  height: 300px;
+  background-color: #fff;
+  display: grid;
+  align-items: center;
+  grid-template-rows: 20% 80%;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "display"
+    "keys";
+  gap: 5px;
+}
+#display {
+  grid-area: display;
+  padding: 0 20px;
+  background-color: #1f1f1f;
+  background-color: #9452a5;
+  color: white;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-collapse: collapse;
+}
+#keys_div {
+  grid-area: keys;
+  height: 100%;
+  display: grid;
+  align-items: center;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "del divide multiply subtract"
+    "seven eight nine add"
+    "four five six equals"
+    "one two three equals"
+    "zero decimal clear equals";
+  gap: 5px;
+}
+#equals {
+  background-color: #4d90fe;
+  grid-area: equals;
+}
+.keys_style {
+  background-color: #eee;
+  border: 1px solid #000;
+  font-weight: 400;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-collapse: collapse;
+  cursor: pointer;
+}
+
+#eq {
+  background-color: #409af7;
+}
+#del {
+  background: #f75252;
+}
+#add,
+#subtract,
+#multiply,
+#divide {
+  background: #9ef776;
+}
+/* #calc_history {
+  display: none;
+  margin: 0 auto;
+  min-height: 100px;
+  width: 250px;
+  border: 1px solid #000;
+  border-top: none;
+}
+#calc_history > h4 {
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  background-color: #1f1f1f;
+  background-color: #9452a5;
+  color: white;
+}
+#history_ul {
+  margin: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+} */
