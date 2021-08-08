@@ -15,6 +15,7 @@ function Calc() {
       <DisplayContext.Provider value={{ state: value, dispatch: dispatch }}>
         <CalcDysplay />
         <CalcKeys />
+        {history.length > 0}
         <CalcHistory />
       </DisplayContext.Provider>
     </div>
