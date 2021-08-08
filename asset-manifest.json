@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "//shaytamir.github.io/calculator_react/static/css/main.e91dad2f.chunk.css",
-    "main.js": "//shaytamir.github.io/calculator_react/static/js/main.d603d537.chunk.js",
-    "main.js.map": "//shaytamir.github.io/calculator_react/static/js/main.d603d537.chunk.js.map",
+    "main.js": "//shaytamir.github.io/calculator_react/static/js/main.b159bda6.chunk.js",
+    "main.js.map": "//shaytamir.github.io/calculator_react/static/js/main.b159bda6.chunk.js.map",
     "runtime-main.js": "//shaytamir.github.io/calculator_react/static/js/runtime-main.9de53abe.js",
     "runtime-main.js.map": "//shaytamir.github.io/calculator_react/static/js/runtime-main.9de53abe.js.map",
     "static/js/2.502a04f3.chunk.js": "//shaytamir.github.io/calculator_react/static/js/2.502a04f3.chunk.js",
     "static/js/2.502a04f3.chunk.js.map": "//shaytamir.github.io/calculator_react/static/js/2.502a04f3.chunk.js.map",
     "index.html": "//shaytamir.github.io/calculator_react/index.html",
-    "precache-manifest.11d5f6a3abd5a39532be856708e44b93.js": "//shaytamir.github.io/calculator_react/precache-manifest.11d5f6a3abd5a39532be856708e44b93.js",
+    "precache-manifest.fbc919a612481dec5dbf48bef57b9a2c.js": "//shaytamir.github.io/calculator_react/precache-manifest.fbc919a612481dec5dbf48bef57b9a2c.js",
     "service-worker.js": "//shaytamir.github.io/calculator_react/service-worker.js",
     "static/css/main.e91dad2f.chunk.css.map": "//shaytamir.github.io/calculator_react/static/css/main.e91dad2f.chunk.css.map",
     "static/js/2.502a04f3.chunk.js.LICENSE.txt": "//shaytamir.github.io/calculator_react/static/js/2.502a04f3.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.9de53abe.js",
     "static/js/2.502a04f3.chunk.js",
     "static/css/main.e91dad2f.chunk.css",
-    "static/js/main.d603d537.chunk.js"
+    "static/js/main.b159bda6.chunk.js"
   ]
 }
