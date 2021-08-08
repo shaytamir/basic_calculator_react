@@ -16,7 +16,7 @@ function CalcEqual() {
           // onEqual(distate);
 
           display.dispatch([display.state, "equal"]);
-          // display.dispatch([display.state, "history"]);
+          display.dispatch([display.state, "history"]);
         }
       }}
     >
