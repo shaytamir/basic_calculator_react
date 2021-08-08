@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "395d66bf7a3d183617e01e349e9adee3",
+    "revision": "e08e2f17ea6a3b139d312985ef6003cb",
     "url": "//shaytamir.github.io/calculator_react/index.html"
   },
   {
-    "revision": "4d0602d64aa91f147929",
+    "revision": "4f49a585a2b27af3f06e",
     "url": "//shaytamir.github.io/calculator_react/static/css/main.e91dad2f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "//shaytamir.github.io/calculator_react/static/js/2.502a04f3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4d0602d64aa91f147929",
-    "url": "//shaytamir.github.io/calculator_react/static/js/main.538f6272.chunk.js"
+    "revision": "4f49a585a2b27af3f06e",
+    "url": "//shaytamir.github.io/calculator_react/static/js/main.d603d537.chunk.js"
   },
   {
     "revision": "dd2bb6e461d7267a0669",
