@@ -9,7 +9,8 @@ export const DisplayContext = React.createContext();
 function Calc() {
   const [reducer, initialState] = reducerValue;
   const [value, dispatch] = useReducer(reducer, initialState);
-
+  console.log(history);
+  console.log(history.length);
   return (
     <div id="main_calc_div">
       <DisplayContext.Provider value={{ state: value, dispatch: dispatch }}>
