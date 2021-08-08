@@ -4,7 +4,7 @@ import "./App.css";
 import Calc from "./componants/Calc.js";
 import CalcHistory from "./componants/CalcHistory";
 export const historyContext = React.createContext();
-const initialState = 0;
+const initialState = false;
 const reducer = (state, action) => {
   const [act] = action;
   //let num = state;
@@ -12,7 +12,7 @@ const reducer = (state, action) => {
 
   switch (act) {
     case "history":
-      return (state = 1);
+      return (state = true);
     case "clearHistory":
       return initialState;
     default:
