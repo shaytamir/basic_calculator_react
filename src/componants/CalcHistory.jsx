@@ -15,7 +15,7 @@ function CalcHistory(prop) {
               key={i}
               onClick={() => {
                 let lineSlice = line.slice(0, line.indexOf("=") - 1);
-                console.log("lineSlice", lineSlice);
+                // console.log("lineSlice", lineSlice);
                 display.dispatch([lineSlice, "fromHistory"]);
               }}
             >

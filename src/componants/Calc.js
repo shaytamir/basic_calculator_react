@@ -13,7 +13,7 @@ function Calc() {
   let initialHistory = [];
   const historyReducer = (state, action) => {
     const [val, act] = action;
-    console.log("value", value);
+    // console.log("value", value);
     switch (act) {
       case "history":
         return [...state, val + value];
