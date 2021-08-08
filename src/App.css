@@ -83,7 +83,7 @@
   background: #9ef776;
 }
 #calc_history {
-  display: none;
+  /* display: none; */
   margin: 0 auto;
   min-height: 100px;
   width: 250px;
