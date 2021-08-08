@@ -43,6 +43,8 @@ const reducer = (state, action) => {
       return state === 0 ? state : deleteLast(state);
     case "clear":
       return initialState;
+    // case "history":
+    //   return initialState;
     default:
       return state;
   }

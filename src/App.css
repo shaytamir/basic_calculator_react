@@ -82,7 +82,7 @@
 #divide {
   background: #9ef776;
 }
-/* #calc_history {
+#calc_history {
   display: none;
   margin: 0 auto;
   min-height: 100px;
@@ -104,4 +104,4 @@
   margin-bottom: 10px;
   padding-left: 10px;
   cursor: pointer;
-} */
+}
