@@ -41,6 +41,7 @@ function onEqual(formula) {
     result = 0;
   }
   console.log(result);
+
   return result;
 }
 

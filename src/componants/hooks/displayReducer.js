@@ -3,7 +3,6 @@ import onEqaual from "./onEqual.js";
 import { checkForDecimal, deleteLast } from "../hooks/useCalculits.js";
 
 const initialState = 0;
-export let history = [];
 const reducer = (state, action) => {
   const [value, act, minus] = action,
     num = state;
@@ -42,12 +41,11 @@ const reducer = (state, action) => {
       return state === 0 ? state : (state = onEqaual(state));
     case "del":
       return state === 0 ? state : deleteLast(state);
+    case "fromHistory":
+      return (state = value);
     case "clear":
       return initialState;
-    case "history":
-      return history.push(value);
-    case "clearHhistory":
-      return (history = []);
+
     default:
       return state;
   }
