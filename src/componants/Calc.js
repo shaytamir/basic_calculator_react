@@ -2,12 +2,12 @@ import React, { useReducer } from "react";
 import CalcDysplay from "./CalcDysplay";
 import CalcHistory from "./CalcHistory";
 import CalcKeys from "./CalcKeys";
-import reducerValue from "./hooks/displayReducer.js";
+import reducerValue, { history } from "./hooks/displayReducer.js";
 
 export const DisplayContext = React.createContext();
 
 function Calc() {
-  const [reducer, initialState, history] = reducerValue;
+  const [reducer, initialState] = reducerValue;
   const [value, dispatch] = useReducer(reducer, initialState);
 
   return (
@@ -15,7 +15,7 @@ function Calc() {
       <DisplayContext.Provider value={{ state: value, dispatch: dispatch }}>
         <CalcDysplay />
         <CalcKeys />
-        {/* <CalcHistory /> */}
+        <CalcHistory />
       </DisplayContext.Provider>
     </div>
   );

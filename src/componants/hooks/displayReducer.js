@@ -3,7 +3,7 @@ import onEqaual from "./onEqual.js";
 import { checkForDecimal, deleteLast } from "../hooks/useCalculits.js";
 
 const initialState = 0;
-let history = [];
+export let history = [];
 const reducer = (state, action) => {
   const [value, act, minus] = action,
     num = state;
@@ -53,5 +53,5 @@ const reducer = (state, action) => {
   }
 };
 
-const reducerValue = [reducer, initialState, history];
+const reducerValue = [reducer, initialState];
 export default reducerValue;
