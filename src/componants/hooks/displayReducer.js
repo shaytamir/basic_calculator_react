@@ -6,7 +6,10 @@ const initialState = 0;
 const reducer = (state, action) => {
   const [value, act, minus] = action,
     num = state;
-  let lastNum = num[num.length - 1];
+  let lastNum;
+  if (num) {
+    lastNum = num[num.length - 1];
+  }
 
   switch (act) {
     case "addition":
