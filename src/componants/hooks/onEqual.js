@@ -11,6 +11,7 @@ function onEqual(formula) {
   //   console.log("indexOf");
   //   return formula;
   // }
+  console.log("check", formula.split());
 
   let splitFormula = formula.split(" ");
   console.log(splitFormula);
