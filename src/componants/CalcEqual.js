@@ -6,8 +6,8 @@ function CalcEqual() {
   const display = useContext(DisplayContext);
   const distate = display.state;
   useEffect(() => {
-    let equals = document.getElementById("equals");
-    equals.addEventListener("keypress", (e) => {
+    // let equals = document.getElementById("equals");
+    window.addEventListener("keypress", (e) => {
       console.log(e.key);
       if (e.key === "Enter") {
         if (distate !== 0 && distate.includes(" ")) {

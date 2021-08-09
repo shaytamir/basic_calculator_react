@@ -10,6 +10,7 @@ function CalcKeys() {
     window.addEventListener("keypress", (e) => {
       console.log(e.key);
       for (let key of keysArr) {
+        console.log(e.which);
         if (e.which === key.keyCode) {
           display.dispatch([key.value, key.action, "-"]);
         }
