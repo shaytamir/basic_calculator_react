@@ -16,7 +16,7 @@ function CalcKeys() {
         }
       }
     });
-  }, [display]);
+  });
 
   function createKeys(e) {
     let keys = [];
