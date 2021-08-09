@@ -23,13 +23,11 @@ function Calc() {
         return state;
     }
   };
-  // const [historyReducer, initialHistory] = reducerValue;
   const [historyValue, dispatchistory] = useReducer(
     historyReducer,
     initialHistory
   );
-  // console.log(history);
-  // console.log(history.length);
+
   return (
     <div id="main_calc_div">
       <DisplayContext.Provider

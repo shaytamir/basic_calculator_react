@@ -28,12 +28,7 @@ function CalcKeys() {
   return (
     <div id="keys_div">
       {createKeys()}
-      <CalcEqual
-      // onClick={() => {
-      //   console.log(display.state);
-      //   display.dispatch([" = ", "equal"]);
-      // }}
-      />
+      <CalcEqual />
     </div>
   );
 }

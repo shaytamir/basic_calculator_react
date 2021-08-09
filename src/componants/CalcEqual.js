@@ -11,10 +11,7 @@ function CalcEqual() {
       id="equals"
       className="keys_style"
       onClick={async () => {
-        // const formula = distate;
         if (distate !== 0 && distate.includes(" ")) {
-          // console.log("inc", distate.includes(" "));
-          // onEqual(distate);
           display.dispatch([distate, "equal"]);
 
           const historyDisplay = distate + " = ";
