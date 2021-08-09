@@ -13,6 +13,7 @@ function CalcEqual() {
       onClick={async () => {
         // const formula = distate;
         if (distate !== 0) {
+          console.log("inc", distate.includes(" "));
           // onEqual(distate);
           display.dispatch([distate, "equal"]);
 
