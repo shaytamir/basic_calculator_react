@@ -1,10 +1,16 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { DisplayContext } from "./Calc.js";
 import { keysArr } from "../calcServices/data/keysArr.js";
 import CalcEqual from "./CalcEqual.js";
 
 function CalcKeys() {
   const display = useContext(DisplayContext);
+
+  useEffect(() => {
+    window.addEventListener("keypress", (e) => {
+      console.log(e.key);
+    });
+  }, []);
 
   function createKeys() {
     let keys = [];
