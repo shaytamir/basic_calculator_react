@@ -9,12 +9,18 @@ function CalcKeys() {
   useEffect(() => {
     window.addEventListener("keypress", (e) => {
       console.log(e.key);
+      // if (key.keyPress === e.key) {
+      //   //  mainLogic(key);
+      // }
     });
   }, []);
 
-  function createKeys() {
+  function createKeys(e) {
     let keys = [];
     for (let key of keysArr) {
+      if (key.keyPress === e.key) {
+        //  mainLogic(key);
+      }
       let addKey = (
         <button
           key={key.id}
