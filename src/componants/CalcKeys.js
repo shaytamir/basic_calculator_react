@@ -23,9 +23,11 @@ function CalcKeys() {
           style={{ gridArea: key.id }}
           onClick={() => display.dispatch([key.value, key.action, "-"])}
           onKeyPress={(e) => {
-            if (key.keyPress === e.key) {
-              display.dispatch([key.value, key.action, "-"]);
-            }
+            console.log(e);
+            console.log(e.kew);
+            // if (key.keyPress === e.key) {
+            //   display.dispatch([key.value, key.action, "-"]);
+            // }
           }}
         >
           {key.value}
