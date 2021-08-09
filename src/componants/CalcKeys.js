@@ -24,7 +24,7 @@ function CalcKeys() {
           onClick={() => display.dispatch([key.value, key.action, "-"])}
           onKeyPress={(e) => {
             console.log(e.key);
-            if (e.key === key.keyCode) {
+            if (e.which === key.keyCode) {
               display.dispatch([key.value, key.action, "-"]);
             }
           }}
