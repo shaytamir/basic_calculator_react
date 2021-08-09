@@ -17,7 +17,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "pages": "git add . && git commit -m \"bug fix\" && git push origin main "
   },
   "eslintConfig": {
     "extends": "react-app"

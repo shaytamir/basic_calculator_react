@@ -7,6 +7,10 @@ import {
 function onEqual(formula) {
   console.log("formula: ", formula);
   /* splits screen value to array (splits by " " seraunding actionKeys) */
+  if (!formula.includes(" ")) {
+    console.log("indexOf");
+    return;
+  }
 
   let splitFormula = formula.split(" ");
   console.log(splitFormula);
