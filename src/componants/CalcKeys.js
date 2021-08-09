@@ -23,9 +23,8 @@ function CalcKeys() {
           style={{ gridArea: key.id }}
           onClick={() => display.dispatch([key.value, key.action, "-"])}
           onKeyPress={(e) => {
-            console.log(e.keyCode);
             console.log(e.key);
-            if (e.key === "Enter") {
+            if (e.key === key.keyCode) {
               display.dispatch([key.value, key.action, "-"]);
             }
           }}
