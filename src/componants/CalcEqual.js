@@ -18,6 +18,9 @@ function CalcEqual() {
           display.dispatchistory([historyDisplay, "history"]);
         }
       }}
+      onKeyPress={(e) => {
+        console.log(e);
+      }}
     >
       =
     </div>
