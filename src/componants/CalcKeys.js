@@ -9,8 +9,13 @@ function CalcKeys() {
   useEffect(() => {
     window.addEventListener("keypress", (e) => {
       console.log(e.key);
+      for (let key of keysArr) {
+        if (e.which === key.keyCode) {
+          display.dispatch([key.value, key.action, "-"]);
+        }
+      }
     });
-  }, []);
+  }, [display]);
 
   function createKeys(e) {
     let keys = [];
@@ -22,12 +27,12 @@ function CalcKeys() {
           className="keys_style"
           style={{ gridArea: key.id }}
           onClick={() => display.dispatch([key.value, key.action, "-"])}
-          onKeyPress={(e) => {
-            console.log(e.key);
-            if (e.which === key.keyCode) {
-              display.dispatch([key.value, key.action, "-"]);
-            }
-          }}
+          // onKeyPress={(e) => {
+          //   console.log(e.key);
+          //   if (e.which === key.keyCode) {
+          //     display.dispatch([key.value, key.action, "-"]);
+          //   }
+          // }}
         >
           {key.value}
         </button>
