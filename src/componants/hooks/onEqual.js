@@ -9,7 +9,7 @@ function onEqual(formula) {
   /* splits screen value to array (splits by " " seraunding actionKeys) */
   if (!formula.includes(" ")) {
     console.log("indexOf");
-    return;
+    return formula;
   }
 
   let splitFormula = formula.split(" ");
